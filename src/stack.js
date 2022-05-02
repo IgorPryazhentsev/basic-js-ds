@@ -21,15 +21,11 @@ class Stack {
   }
 
   pop() {
-    if (this.stack > 1) {
-      this.stack.pop()
-    }
-    else return undefined
+    return this.stack.pop()
   }
 
   peek() {
-    let arr = this.stack;
-    return arr.pop()
+    return this.stack[this.stack.length - 1]
   }
 }
 
